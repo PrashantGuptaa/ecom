@@ -1,84 +1,94 @@
 .card {
-    height: 300px;
-    width: 200px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
+  height: 300px;
+  width: 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
 
-    box-shadow: 1px 1px 1px 1px rgb(215, 215, 215);
-    border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(215, 215, 215);
+  border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
 }
 
 .img {
-    height: 35%;
-    aspect-ratio: 1/1;
-    padding: 20px;
+  height: 35%;
+  aspect-ratio: 1/1;
+  padding: 20px;
 }
 
 .title {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .price {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .layout {
-    height: 90%;
-    width: 80%;
-    padding: 10px;
+  height: 90%;
+  width: 80%;
+  padding: 10px;
 
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 1px rgb(162, 162, 162);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(162, 162, 162);
 
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    font-family: cursive;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-family: cursive;
+  gap: 10px;
 }
 
 .heading {
-    border-bottom: 1px solid rgb(212, 212, 212);
-    width: 100%;
-    padding: 5px 0px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  width: 100%;
+  padding: 5px 0px;
 }
 
 .image {
-    height: 40%;
-    object-fit: contain;
+  height: 40%;
+  object-fit: contain;
 }
 
 .pricing {
-    position: absolute;
-    bottom: 10px;
-    color: green;
+  position: absolute;
+  bottom: 10px;
+  color: green;
 }
 
 .det {
-    height: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  position: relative;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .det {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image {
+    height: 90%;
+    padding: 20px;
+  }
+
+  .text-data {
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    position: relative;
+    gap: 20px;
+  }
 }
-
-.text-data {
-/* position: relative; */
-}
-
-/* @media screen and (min-width: 650px) {
-    .layout {
-        display: flex;
-        flex-direction: row;
-    }
-  } */
